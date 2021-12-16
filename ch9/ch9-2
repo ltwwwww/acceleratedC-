@@ -1,0 +1,11 @@
+compare函数：
+bool compare(Student_info&,  Student_info&);
+
+// compare function added for not constant student_info_n objects
+// not constant objects can't access functions that are not defined as constant
+bool compare_n(Student_info_n& x,  Student_info_n& y)
+{
+  return x.name() < y.name();
+}
+
+不能用常量对象调用非常量函数。
